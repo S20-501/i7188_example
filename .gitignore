@@ -1,0 +1,5 @@
+.cache
+build/*
+!build/7188xw.exe
+!build/7188xw.ini
+cmake-build-*
