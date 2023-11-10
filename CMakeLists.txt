@@ -34,5 +34,8 @@ elseif(MEMORY_MODEL STREQUAL "large")
    set(I7188_LIB ${PROJECT_SOURCE_DIR}/lib/i7188l.lib)
 endif()
 
-add_executable(main src/main.cpp)
-target_link_libraries(main ${I7188_LIB})
+add_executable(lab1 src/lab1.cpp)
+target_link_libraries(lab1 ${I7188_LIB})
+
+add_executable(lab2 src/lab2.cpp)
+target_link_libraries(lab2 ${I7188_LIB})
