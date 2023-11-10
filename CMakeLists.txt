@@ -3,7 +3,7 @@ project(i7188_example)
 
 if(CMAKE_C_COMPILER_ID STREQUAL "OpenWatcom")
     add_compile_options(-wcd=211) # Warning! W211: col(28) #pragma attributes for 'malloc_wrapper' may be inconsistent
-    add_compile_options(-1 -bt=dos -d0 -ei -j -ms -bcl=dos)
+    add_compile_options(-1 -bt=dos -d0 -ei -j -ms -bcl=dos -fpc)
 
     # add_link_options(OPTION HEAPSIZE=64k) # no need for DOS, it's already 64k
 
@@ -33,6 +33,9 @@ elseif(MEMORY_MODEL STREQUAL "large")
    add_compile_options(-ml)
    set(I7188_LIB ${PROJECT_SOURCE_DIR}/lib/i7188l.lib)
 endif()
+
+add_executable(main src/lab2.cpp)
+target_link_libraries(main ${I7188_LIB})
 
 add_executable(lab1 src/lab1.cpp)
 target_link_libraries(lab1 ${I7188_LIB})
