@@ -15,8 +15,8 @@ void __cdecl __saveregs free_wrapper(void *ptr)
 }
 #pragma aux free_wrapper "_free"
 
-unsigned char _8087 = 0;
-unsigned char _real87 = 0;
+// unsigned char _8087 = 0;
+// unsigned char _real87 = 0;
 
 extern int Borland_vsprintf(char *__s, const char *__format, __va_list __arg);
 #pragma aux(__cdecl) Borland_vsprintf "_vsprintf"
