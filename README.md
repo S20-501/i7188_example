@@ -58,11 +58,11 @@
 
 
 
-После завершения установки, выберите Modify local machine environment variables:
+После завершения установки, выберите `Modify local machine environment variables`:
 
 ![](./media/image7.png)
 
-Затем Don't modify associations:
+Затем `Don't modify associations`:
 
 ![](./media/image8.png)
 
@@ -108,6 +108,7 @@
 2. Загрузите проект в Visual Studio Code;
 3. Перейдите во вкладку CMake;
 4. В пункте Configure выберите компилятор OpenWatcom v2. Во всплывающем окне появится подсказка с каталогом компилятора;
+
 ![](./media/image17.png)
 ![](./media/image18.png)
 

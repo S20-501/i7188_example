@@ -88,14 +88,16 @@
 > **В среде Windows используйте `\\` для указания пути.**
 
 `.vscode/c_cpp_properties.json`:
+
 ![](./media/trouble7.png)
 
 `.vscode/cmake-kits.json`:
+
 ![](./media/trouble8.png)
 
 
 
-> [!NOTICE]
+> [!NOTE]
 > **Если путь указан верно, но ошибка сохраняется, перейдите к следующему пункту.**
 
 ## Неполная установка Watcom
